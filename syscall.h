@@ -27,7 +27,7 @@
 #define SYS_clone 26
 #define SYS_getuthread 27
 #define SYS_sharedmem 28
-
+#define SYS_waitpid 29
 
 
 

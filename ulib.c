@@ -130,7 +130,7 @@ int
 thread_join(struct thread *t)
 {
   /* replace me -> you need to eliminate busy waiting and have no zombies! */
-  while (t->alive);
+  waitpid(t->pid);
   return t->exit_value;
 }
 

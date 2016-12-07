@@ -121,6 +121,7 @@ void            yield(void);
 int             clone(void*, void*, void*, void*);
 int             getuthread(void);
 struct sharedmem * shm(void);
+int             waitpid(int);
 
 // swtch.S
 void            swtch(struct context**, struct context*);

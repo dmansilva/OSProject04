@@ -106,6 +106,7 @@ extern int sys_allocpage(void);
 extern int sys_clone(void);
 extern int sys_getuthread(void);
 extern int sys_sharedmem(void);
+extern int sys_waitpid(void);
 
 static int (*syscalls[])(void) = {
 [SYS_fork]    sys_fork,
@@ -137,6 +138,7 @@ static int (*syscalls[])(void) = {
 [SYS_clone] sys_clone,
 [SYS_getuthread] sys_getuthread,
 [SYS_sharedmem] sys_sharedmem,
+[SYS_waitpid]   sys_waitpid
 };
 
 void

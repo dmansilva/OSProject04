@@ -190,3 +190,15 @@ sys_sharedmem(void)
 {
   return (int) sharedmem(proc->pgdir);
 }
+
+int
+sys_waitpid(void)
+{
+  int v;
+  
+  if(argint(0, &v) < 0)
+    return -1;
+
+  return waitpid(v);
+
+}

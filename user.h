@@ -44,6 +44,7 @@ void *allocpage(void *);
 int clone(int (*func)(void *), void *stack, void *arg, void *thread);
 struct thread *getuthread(void);
 void *sharedmem(void);
+int waitpid(int);
 
 // ulib.c
 int stat(char*, struct stat*);

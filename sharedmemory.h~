@@ -1,0 +1,11 @@
+
+
+#define MEM_VA 0x70000000
+#define MEMPAGES 20
+
+struct sharedmem {
+
+  uint ref_count;
+  void *sharedmem_addr;
+
+}
